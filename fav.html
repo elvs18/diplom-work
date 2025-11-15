@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранное</title>
+</head>
+
+<body>
+
+    <section class="width">
+
+        <header>
+
+            <nav class="top_header_nav">
+                <a href="index.html"><img src="./img/market-logo-nav.png" alt=""></a>
+                <button class="top_header_nav_catalog close">
+                    <img src="./img/nav-catalog.png" alt="">
+                    <a href="#">Каталог</a>
+                </button>
+                <div class="search_nav">
+                    <input type="text" placeholder="Искать товары и категории">
+                    <button><img src="./img/nav-search.png" alt="" class="w-6 h-6"></button>
+                </div>
+                <div class="store_action_header">
+                    <div class="button_auth" id="showDialog">
+                        <img src="./img/nav-user.png" alt="">
+                        <span>Войти</span>
+                    </div>
+                    <a href="fav.html">
+                        <img src="./img/nav-fav.png" alt="">
+                        <span>Избранное</span>
+                    </a>
+                    <a href="basket.html">
+                        <img src="./img/nav-basket.png" alt="">
+                        <span>Корзина</span>
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="bottom_header_nav">
+                <div class="bottom_header_nav_flex">
+                    <div class="header_nav_flex_elem">
+                        <div class="image"><img src="./img/header_nav_flex-top-sales.png" alt=""></div>
+                        <span>Товары недели</span>
+                    </div>
+                    <div class="header_nav_flex_elem">
+                        <div class="image"><img src="./img/header_nav_flex-children.png" alt=""></div>
+                        <span>Мир детей</span>
+                    </div>
+                    <div class="header_nav_flex_elem">
+                        <div class="image"><img src="./img/header_nav_flex-collection.png" alt=""></div>
+                        <span>Новая коллекция</span>
+                    </div>
+                    <div class="header_nav_flex_elem">
+                        <div class="image"><img src="./img/header_nav_flex-hobby.png" alt=""></div>
+                        <span>Хобби и творчество</span>
+                    </div>
+                    <div class="header_nav_flex_elem">
+                        <div class="image"><img src="./img/header_nav_flex-phone.png" alt=""></div>
+                        <span>Смартфоны</span>
+                    </div>
+                    <div class="header_nav_flex_item">
+                        <a href="#">Туризм, рыбалка и охота</a>
+                    </div>
+                    <div class="header_nav_flex_item">
+                        <a href="#">Электроника</a>
+                    </div>
+                    <div class="header_nav_flex_item">
+                        <a href="#">Бытовая техника</a>
+                    </div>
+                    <div class="header_nav_flex_item">
+                        <a href="#">Ещё</a>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- ОКНО КАТАЛОГА -->
+        <div id="catalog_menu">
+            <div class="catalog_grid">
+                <div class="catalog_list">
+                    <h3>Электроника</h3>
+                    <ul>
+                        <li><a href="#">Смартфоны</a></li>
+                        <li><a href="#">Ноутбуки</a></li>
+                        <li><a href="#">Наушники</a></li>
+                        <li><a href="#">Телевизоры</a></li>
+                    </ul>
+                </div>
+
+                <div class="catalog_list">
+                    <h3>Одежда</h3>
+                    <ul>
+                        <li><a href="#">Женская</a></li>
+                        <li><a href="#">Мужская</a></li>
+                        <li><a href="#">Обувь</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="catalog_list">
+                    <h3>Для дома</h3>
+                    <ul>
+                        <li><a href="#">Мебель</a></li>
+                        <li><a href="#">Текстиль</a></li>
+                        <li><a href="#">Кухонные товары</a></li>
+                        <li><a href="#">Интерьер</a></li>
+                    </ul>
+                </div>
+
+                <div class="catalog_list">
+                    <h3>Красота и уход</h3>
+                    <ul>
+                        <li><a href="#">Парфюмерия</a></li>
+                        <li><a href="#">Косметика</a></li>
+                        <li><a href="#">Уход за кожей</a></li>
+                        <li><a href="#">Волосы</a></li>
+                    </ul>
+                </div>
+
+                <div class="catalog_list">
+                    <h3>Туризм и отдых</h3>
+                    <ul>
+                        <li><a href="#">Рыбалка</a></li>
+                        <li><a href="#">Палатки</a></li>
+                        <li><a href="#">Охота</a></li>
+                        <li><a href="#">Кемпинг</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ОКНО АКТИВАЦИИ -->
+
+        <dialog id="dialog">
+            <h3>Войти в Uzum Market</h3>
+
+            <p><input type="tel" placeholder="+998 00-000-00-00"></p>
+            <p><button>Получить код</button></p>
+
+            <p>Продолжая, я соглашаюсь c <br> <a href="#">политикой обработки персональных данных</a> и <br> <a
+                    href="#">офертой Uzum ID</a> <br><br> <a href="#"> Что такое Uzum ID? </a></p>
+            <p id="closeDialog"><img src="./img/exit.png" alt=""></i></p>
+        </dialog>
+
+
+        <div class="fav_grid products_container">
+            <h2>Избранное пусто</h2>
+        </div>
+
+        <div class="empty_favbox">
+            <img src="./img/empty-favbox.png" alt="">
+            <h4>Добавьте то, что понравилось</h4>
+            <p>Нажмите на ♡ в товаре. Войдите в аккаунт и всё избранное сохранится</p>
+            <button class="showFavDialog">Войти в аккаунт</button>
+        </div>
+
+        <footer>
+
+            <div class="footer_info_part">
+
+                <div class="footer_cart">
+                    <span>О нас</span>
+                    <a href="#">Пункты выдачи</a>
+                    <a href="#">Вакансии</a>
+                </div>
+
+                <div class="footer_cart">
+                    <span>Пользователям</span>
+                    <a href="#">Связаться с нами</a>
+                    <a href="#">Вопрос-Ответ</a>
+                </div>
+
+                <div class="footer_cart">
+                    <span>Для предпринимателей</span>
+                    <a href="#">Продавайте на Uzum</a>
+                    <a href="#">Вход для продавцов</a>
+                    <a href="#">Открыть пункт выдачи</a>
+                </div>
+
+                <div class="contacts">
+                    <div class="app_links">
+                        <span>Скачать приложение</span>
+                        <div class="link">
+                            <a href="#">
+                                <img src="./img/apple-logo.png" alt="">
+                                <p class="app_link_text">AppStore</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/google-play.png" alt="">
+                                <p class="app_link_text">Google Play</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact_item">
+                        <span>Uzum в соцсетях</span>
+                        <div class="social">
+                            <img src="./img/instagram.png" alt="">
+                            <img src="./img/telegram.png" alt="">
+                            <img src="./img/facebook.png" alt="">
+                            <img src="./img/youtube.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="long_line_of_footer"></span>
+
+            <div class="underline_footer_info">
+                <a href="#"> Соглашение о конфиденциальности </a>
+                <a href="#"> Пользовательское соглашение </a>
+                <p class="policy__copyright"> «2025© ООО «UZUM MARKET». ИНН 309376127. Все права защищены» </p>
+            </div>
+        </footer>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "updateduzumwork",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "json-server --watch db.json --port 3000", 
+    "dev:all": "concurrently \"npm run server\" \"npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "json-server": "^1.0.0-beta.3",
+    "vite": "^7.1.7"
+  }
+}

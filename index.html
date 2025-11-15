@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uzum Market</title>
+
+</head>
+
+<body>
+
+  <section class="width">
+
+    <header>
+
+      <nav class="top_header_nav">
+        <a href="index.html"><img src="./img/market-logo-nav.png" alt=""></a>
+        <button class="top_header_nav_catalog close">
+          <img src="./img/nav-catalog.png" alt="">
+          <a href="#">Каталог</a>
+        </button>
+        <div class="search_nav">
+          <input type="text" placeholder="Искать товары и категории">
+          <button><img src="./img/nav-search.png" alt="" class="w-6 h-6"></button>
+        </div>
+        <div class="store_action_header">
+          <div class="button_auth" id="showDialog">
+            <img src="./img/nav-user.png" alt="">
+            <span>Войти</span>
+          </div>
+          <a href="fav.html">
+            <img src="./img/nav-fav.png" alt="">
+            <span>Избранное</span>
+          </a>
+          <a href="basket.html">
+            <img src="./img/nav-basket.png" alt="">
+            <span>Корзина</span>
+          </a>
+        </div>
+      </nav>
+
+      <nav class="bottom_header_nav">
+        <div class="bottom_header_nav_flex">
+          <div class="header_nav_flex_elem">
+            <div class="image"><img src="./img/header_nav_flex-top-sales.png" alt=""></div>
+            <span>Товары недели</span>
+          </div>
+          <div class="header_nav_flex_elem">
+            <div class="image"><img src="./img/header_nav_flex-children.png" alt=""></div>
+            <span>Мир детей</span>
+          </div>
+          <div class="header_nav_flex_elem">
+            <div class="image"><img src="./img/header_nav_flex-collection.png" alt=""></div>
+            <span>Новая коллекция</span>
+          </div>
+          <div class="header_nav_flex_elem">
+            <div class="image"><img src="./img/header_nav_flex-hobby.png" alt=""></div>
+            <span>Хобби и творчество</span>
+          </div>
+          <div class="header_nav_flex_elem">
+            <div class="image"><img src="./img/header_nav_flex-phone.png" alt=""></div>
+            <span>Смартфоны</span>
+          </div>
+          <div class="header_nav_flex_item">
+            <a href="#">Туризм, рыбалка и охота</a>
+          </div>
+          <div class="header_nav_flex_item">
+            <a href="#">Электроника</a>
+          </div>
+          <div class="header_nav_flex_item">
+            <a href="#">Бытовая техника</a>
+          </div>
+          <div class="header_nav_flex_item">
+            <a href="#">Ещё</a>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- ОКНО КАТАЛОГА -->
+    <div id="catalog_menu">
+      <div class="catalog_grid">
+        <div class="catalog_list">
+          <h3>Электроника</h3>
+          <ul>
+            <li><a href="#">Смартфоны</a></li>
+            <li><a href="#">Ноутбуки</a></li>
+            <li><a href="#">Наушники</a></li>
+            <li><a href="#">Телевизоры</a></li>
+          </ul>
+        </div>
+
+        <div class="catalog_list">
+          <h3>Одежда</h3>
+          <ul>
+            <li><a href="#">Женская</a></li>
+            <li><a href="#">Мужская</a></li>
+            <li><a href="#">Обувь</a></li>
+            <li><a href="#">Аксессуары</a></li>
+          </ul>
+        </div>
+
+        <div class="catalog_list">
+          <h3>Для дома</h3>
+          <ul>
+            <li><a href="#">Мебель</a></li>
+            <li><a href="#">Текстиль</a></li>
+            <li><a href="#">Кухонные товары</a></li>
+            <li><a href="#">Интерьер</a></li>
+          </ul>
+        </div>
+
+        <div class="catalog_list">
+          <h3>Красота и уход</h3>
+          <ul>
+            <li><a href="#">Парфюмерия</a></li>
+            <li><a href="#">Косметика</a></li>
+            <li><a href="#">Уход за кожей</a></li>
+            <li><a href="#">Волосы</a></li>
+          </ul>
+        </div>
+
+        <div class="catalog_list">
+          <h3>Туризм и отдых</h3>
+          <ul>
+            <li><a href="#">Рыбалка</a></li>
+            <li><a href="#">Палатки</a></li>
+            <li><a href="#">Охота</a></li>
+            <li><a href="#">Кемпинг</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ОКНО АКТИВАЦИИ -->
+
+    <dialog id="dialog">
+      <h3>Войти в Uzum Market</h3>
+
+      <p><input type="tel" placeholder="+998 00-000-00-00"></p>
+      <p><button>Получить код</button></p>
+
+      <p>Продолжая, я соглашаюсь c <br> <a href="#">политикой обработки персональных данных</a> и <br> <a
+          href="#">офертой Uzum ID</a> <br><br> <a href="#"> Что такое Uzum ID? </a></p>
+      <p id="closeDialog"><img src="./img/exit.png" alt=""></i></p>
+    </dialog>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/main-promo-slider.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/main-promo-slider2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/main-promo-slider3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/main-promo-slider4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/main-promo-slider5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/main-promo-slider6.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/main-promo-slider7.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/main-promo-slider8.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/main-promo-slider9.jpg" alt=""></div>
+      </div>
+      <div class="swiper-button-next text-black rounded-full border border-[#E2EAF1] bg-[#ffffffa8] w-10 h-10"></div>
+      <div class="swiper-button-prev text-black rounded-full border border-[#E2EAF1] bg-[#ffffffa8] w-10 h-10"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="after_swiper_boxs">
+      <div class="after_swiper_box">
+        <img src="./img/after-swiper-button-auto.png" alt="" class="w-10 h-10">
+        <span>Автотовары</span>
+      </div>
+      <div class="after_swiper_box">
+        <img src="./img/after-swiper-button-guarantee.png" alt="">
+        <span>Гарантия низких цен</span>
+      </div>
+      <div class="after_swiper_box">
+        <img src="./img/after-swiper-button-fashion.png" alt="">
+        <span>Модный базар</span>
+      </div>
+      <div class="after_swiper_box">
+        <img src="./img/after-swiper-button-gifts.png" alt="">
+        <span>Розыгрыш призов</span>
+      </div>
+    </div>
+
+    <div class="popular_main_products">
+      <h2>Популярное</h2>
+
+      <div class="products_grid"></div>
+
+
+      <section id="product_page" class="hidden"></section>
+
+
+      <div class="add_ten_products_btn_box">
+        <button class="add_ten_products_btn">Показать еще 10 товаров</button>
+      </div>
+    </div>
+
+    <footer>
+
+      <div class="footer_info_part">
+
+        <div class="footer_cart">
+          <span>О нас</span>
+          <a href="#">Пункты выдачи</a>
+          <a href="#">Вакансии</a>
+        </div>
+
+        <div class="footer_cart">
+          <span>Пользователям</span>
+          <a href="#">Связаться с нами</a>
+          <a href="#">Вопрос-Ответ</a>
+        </div>
+
+        <div class="footer_cart">
+          <span>Для предпринимателей</span>
+          <a href="#">Продавайте на Uzum</a>
+          <a href="#">Вход для продавцов</a>
+          <a href="#">Открыть пункт выдачи</a>
+        </div>
+
+        <div class="contacts">
+          <div class="app_links">
+            <span>Скачать приложение</span>
+            <div class="link">
+              <a href="#">
+                <img src="./img/apple-logo.png" alt="">
+                <p class="app_link_text">AppStore</p>
+              </a>
+              <a href="#">
+                <img src="./img/google-play.png" alt="">
+                <p class="app_link_text">Google Play</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact_item">
+            <span>Uzum в соцсетях</span>
+            <div class="social">
+              <img src="./img/instagram.png" alt="">
+              <img src="./img/telegram.png" alt="">
+              <img src="./img/facebook.png" alt="">
+              <img src="./img/youtube.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="long_line_of_footer"></span>
+
+      <div class="underline_footer_info">
+        <a href="#"> Соглашение о конфиденциальности </a>
+        <a href="#"> Пользовательское соглашение </a>
+        <p class="policy__copyright"> «2025© ООО «UZUM MARKET». ИНН 309376127. Все права защищены» </p>
+      </div>
+    </footer>
+
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
