@@ -897,9 +897,9 @@ footer {
 
 .inf_about_prod {
   display: flex;
-  gap: 3px;
+  gap: 5px;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   text-align: left;
 }
 
