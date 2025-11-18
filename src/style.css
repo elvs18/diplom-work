@@ -1,11 +1,23 @@
+@font-face {
+  font-family: 'Google Sans Flex';
+  src: url('../Google_Sans_Flex_for_uzum/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* font-family: 'Google Sans Flex', sans-serif; */
 }
 
 img {
   max-width: 100%;
+}
+
+body {
+  font-family: 'Google Sans Flex', sans-serif;
 }
 
 .width {
@@ -47,6 +59,7 @@ header {
 .top_header_nav_catalog a {
   text-decoration: none;
   color: #9643FF;
+  font-size: 14px;
 }
 
 .search_nav {
@@ -144,6 +157,10 @@ header {
   cursor: pointer;
 }
 
+.header_nav_flex_elem span, .store_action_header span, .header_nav_flex_item {
+  font-size: 14px;
+}
+
 .header_nav_flex_item a {
   text-decoration: none;
   color: #686868;
@@ -188,6 +205,7 @@ header {
 .catalog_list h3 {
   font-weight: 700;
   margin-bottom: 12px;
+  font-size: 14px;
 }
 
 .catalog_list ul {
@@ -197,6 +215,7 @@ header {
 .catalog_list a {
   text-decoration: none;
   color: #686868;
+  font-size: 14px;
 }
 
 /* #showDialog {
@@ -223,7 +242,6 @@ dialog {
 
 dialog h3 {
   margin-bottom: 40px;
-  font-family: Gilroy;
   font-weight: 600;
   font-style: Semibold;
   font-size: 36px;
@@ -467,6 +485,10 @@ dialog::backdrop {
   border-radius: 5px;
 }
 
+.title {
+  font-size: 14px;
+}
+
 .review {
   color: rgba(128, 128, 128, 0.845);
   display: flex;
@@ -476,6 +498,10 @@ dialog::backdrop {
 .review img {
   width: 16px;
   height: 16px;
+}
+
+.review span {
+  font-size: 14px;
 }
 
 .add_basket {
@@ -516,7 +542,7 @@ dialog::backdrop {
 }
 
 .count {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .minus {
@@ -559,18 +585,18 @@ footer {
   gap: 30px;
   justify-content: start;
   align-items: start;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .footer_cart {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .footer_cart span {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 120%;
   color: #000000;
 }
@@ -578,26 +604,27 @@ footer {
 .footer_cart a {
   text-decoration: none;
   color: #686868;
+  font-size: 12px;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   align-items: start;
   justify-content: center;
 }
 
 .contacts span {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 120%;
   color: #000000;
 }
 
 .link {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 30px;
   margin-top: 15px;
 }
@@ -609,6 +636,7 @@ footer {
   align-items: center;
   text-decoration: none;
   color: black;
+  font-size: 13px;
 }
 
 .app_links img {
@@ -621,7 +649,7 @@ footer {
   gap: 10px;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .social img {
@@ -649,11 +677,16 @@ footer {
 .underline_footer_info a {
   text-decoration: none;
   color: black;
+  font-size: 14px;
 }
 
 .policy__copyright {
   color: #686868;
   margin-left: auto;
+  font-size: 11px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
 
 /* стили корзины */
@@ -680,7 +713,6 @@ footer {
 }
 
 .order_block h4 {
-  font-family: Gilroy;
   font-weight: 600;
   font-style: Extrabold;
   font-size: 30px;
@@ -690,7 +722,6 @@ footer {
 }
 
 .order_block b {
-  font-family: Gilroy;
   font-weight: 600;
   font-style: Medium;
   font-size: 18px;
@@ -708,7 +739,6 @@ footer {
   color: white;
   text-align: center;
   padding: 0 4px;
-  font-family: Gilroy;
   font-weight: 600;
   font-style: Semibold;
   font-size: 13px;
@@ -722,7 +752,6 @@ footer {
 
 .with_uzum_card p,
 .without_uzum_card p {
-  font-family: Gilroy;
   font-weight: 500;
   font-style: Medium;
   font-size: 17px;
@@ -732,7 +761,6 @@ footer {
 }
 
 .with_uzum_card span {
-  font-family: Gilroy;
   font-weight: 800;
   font-style: Extrabold;
   font-size: 28px;
@@ -743,7 +771,6 @@ footer {
 }
 
 .without_uzum_card span {
-  font-family: Gilroy;
   font-weight: 500;
   font-style: Medium;
   font-size: 17px;
@@ -765,7 +792,6 @@ footer {
 
 .empty_basket h4,
 .empty_favbox h4 {
-  font-family: Gilroy;
   font-weight: 600;
   font-style: Semibold;
   font-size: 28px;
@@ -776,7 +802,6 @@ footer {
 
 .empty_basket p,
 .empty_favbox p {
-  font-family: Gilroy;
   font-weight: 400;
   font-style: Regular;
   font-size: 14px;
@@ -824,7 +849,6 @@ footer {
 }
 
 .main_info_about_prod h3 {
-  font-family: Gilroy;
   font-weight: 800;
   font-style: Extrabold;
   font-size: 44px;
